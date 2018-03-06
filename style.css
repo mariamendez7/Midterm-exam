@@ -10,13 +10,15 @@ body{
     overflow: auto;
     background-color: #eceeef;
     padding:30px;
-    border: 5px ridge	#c1e7e3;
+    border: 8px outset #68c7c1;
+    font-family: Georgia; /* NOTE: made Georgia default font for both pages */
 }
 strong{
       font-weight: bold;
     }
 em{
       font-style: italic;
+      color: #01656f;
     }
 @media(min-width: 650px) {
 .popular-articles {
@@ -30,12 +32,63 @@ em{
     padding-left: 15px;
 }
 }
-h1{
+h1, h2{
   font-family: helvetica; /* NOTE: changed font to helvetica */
   font-weight: lighter;   /* NOTE: changed weight of font */
   font-size: 50px; /* NOTE: made font size larger*/
+  border-bottom: 3px inset #ff664f; /* NOTE: added border to headline */
+  margin-top: 3px; /* NOTE: made space between headline and top of container smaller*/
+}
+.story-text {
+  border-top: 2px ridge #01656f; /* NOTE: added a border to the between story text and rest of container */
+  margin-top: 15px; /* NOTE: added spacing between byline/publish time */
 }
 .story-text p{
-  font-family: gerpgia;
-  font-size; 15px;
+  font-family: Georgia; /* NOTE: changed font to helvetica */
+  font-size; 17px; /* NOTE: made font size smaller*/
 }
+img{
+  width: 90%; /* NOTE: made the image take up 90% of the article */
+  display: block; /* NOTE: made image a block to center more */
+  border: 2px dashed #ff664f; /* NOTE: added a border to the image */
+  margin-top: -0px; /* NOTE: deleted spacing between the image and headline */
+  margin-bottom: 20px; /* NOTE: added space between image and byline, publish-date */
+  padding: 2px; /* NOTE: added space between image and its border */
+}
+.byline {
+  font-family: helvetica;
+  display: inline; /* NOTE: changed to display in a line rather than in stacked blocks */
+  font-size: 15px; /* NOTE: made byline smaller */
+  text-transform: lowercase; /* NOTE: changed byline to lowercase */
+  border-right: 2px solid #ff664f; /* NOTE: added a border between the byline an publish-date */
+  padding-top: 5px; /* NOTE: added space between the byline and top */
+  padding-right: 5px; /* NOTE: added space between the border and byline */
+  text-decoration: underline; /* NOTE: added an underline to the byline */
+}
+.publish-time {
+  display: inline; /* NOTE: changed to display in a line rather than in stacked blocks */
+  font-size: 15px; /* NOTE: changed font-size */
+  text-transform: lowercase; /* NOTE: font changed to all lowercase */
+  font-weight: lighter; /* NOTE: made font lighter */
+  text-decoration: overline; /* NOTE: added text-decoration */
+}
+h4 {
+  font-family: helvetica; /* NOTE: changed h4 font to helvetica */
+  margin-bottom: 21px;  /* NOTE: added space between the h4 and lists */
+}
+a {
+  color: #ff664f; /* NOTE: changed link color to a bright organge */
+}
+ul{
+  color: #01656f; /* NOTE: changed text color to match body background */
+}
+.popular-articles{
+  border-right: 2px solid #ff664f; /* NOTE: added a border between the two columns  */
+}
+.popular-books{
+  padding-left: 30px; /* NOTE: added a spacing between column and border  */
+
+}
+.popular-books, .popular-articles{
+  background-color: #d4f7f7;  /* NOTE: changed background color  */
+  padding-left: 21px; /* NOTE: added spacing to left of both columns to center */
