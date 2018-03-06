@@ -12,6 +12,12 @@ body{
     padding:30px;
     border: 5px ridge	#c1e7e3;
 }
+strong{
+      font-weight: bold;
+    }
+em{
+      font-style: italic;
+    }
 @media(min-width: 650px) {
 .popular-articles {
   float:left;
@@ -23,4 +29,13 @@ body{
     width: 50%;
     padding-left: 15px;
 }
+}
+h1{
+  font-family: helvetica; /* NOTE: changed font to helvetica */
+  font-weight: lighter;   /* NOTE: changed weight of font */
+  font-size: 50px; /* NOTE: made font size larger*/
+}
+.story-text p{
+  font-family: gerpgia;
+  font-size; 15px;
 }
